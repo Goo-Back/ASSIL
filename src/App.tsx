@@ -8,7 +8,7 @@ import Home from "./components/Home"
 import Page404 from "./components/Page404"
 function App() {
   return (
-    <BrowserRouter basename="/ASSIL">
+    <BrowserRouter basename="/assil">
       <div>
         <Navbar />
         <Routes>
