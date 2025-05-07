@@ -17,7 +17,7 @@ const products = [
     rating: 5,
     originalPrice: 30,
     currentPrice: 15,
-    image: '/images/assil.jpg',
+    image: '../../public/images/assil.jpg',
     pdf:'/shawarma.pdf',
   },
   {
