@@ -16,26 +16,29 @@ const products = [
     description: 'Une fusion d’épices orientales et marocaines pour un chawarma savoureux et irrésistible.',
     rating: 5,
     originalPrice: 30,
-    currentPrice: 25,
-    image: '../../public/images/assil.jpg',
+    currentPrice: 15,
+    image: '/images/assil.jpg',
+    pdf:'/shawarma.pdf',
   },
   {
     id: 2,
     name: 'Moroccan Chicken Spices',
     description: 'Des saveurs riches et chaudes pour transformer votre poulet rôti en un festin traditionnel.',
     rating: 5,
-    originalPrice: 45,
-    currentPrice: 38,
-    image: '../../public/images/chicken.jpg',
+    originalPrice: 25,
+    currentPrice: 15,
+    image: '/images/chicken.jpg',
+    pdf:'/shawarma.pdf',
   },
   {
     id: 3,
     name: 'Moroccan Kefta Spices',
     description: 'Un assaisonnement audacieux et parfumé, parfait pour vos boulettes ou grillades à la marocaine.',
     rating: 4,
-    originalPrice: 15,
-    currentPrice: 12,
-    image: '../../public/images/kefta.jpg',
+    originalPrice: 20,
+    currentPrice: 15,
+    image: '/images/kefta.jpg',
+    pdf:'/kefta.pdf',
   },
 ];
 
@@ -50,7 +53,7 @@ const BestSellers = () => {
             <div key={product.id} className="bg-white rounded-2xl shadow-lg overflow-hidden transform hover:-translate-y-2 transition-all duration-300">
               <div className="relative">
                 <img 
-                  src={product.image} 
+                  src={product.image}
                   alt={product.name} 
                   className="w-full h-64 object-cover"
                 />
@@ -76,12 +79,14 @@ const BestSellers = () => {
                 
                 <div className="mt-4 flex items-center justify-between">
                   <div>
-                    <span className="text-gray-500 line-through text-sm">{product.originalPrice}€</span>
-                    <span className="ml-2 text-2xl font-bold text-gray-900">{product.currentPrice}€</span>
+                    <span className="text-gray-500 line-through text-sm">{product.originalPrice}dh</span>
+                    <span className="ml-2 text-2xl font-bold text-gray-900">{product.currentPrice}DH</span>
                   </div>
+                  <a href={product.pdf} target="_blank">
                   <button className="bg-red-700 text-white px-4 py-2 rounded-full text-sm font-medium hover:bg-red-800 transition-colors">
                     Guide
                   </button>
+                  </a>
                   <button onClick={() => {
                     const message = encodeURIComponent(`Bonjour, je suis intéressé par : ${product.name} (${product.currentPrice}€)`);
                     const whatsappLink = `https://wa.me/${phoneNumber}?text=${message}`;

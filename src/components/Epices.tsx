@@ -16,91 +16,203 @@ const spices = [
     id: 1,
     name: "Moroccan Chicken Spices",
     description: "Des saveurs riches et chaudes pour transformer votre poulet rôti en un festin traditionnel.",
-    price: 25,
-    oldPrice: 30,
+    price: 15,
+    oldPrice: 25,
     rating: 5,
-    image: '../../public/images/chicken.jpg',
+    image: '/images/chicken.jpg',
     popular: false,
+    pdf:'/shawarma.pdf',
   },
   {
     id: 2,
     name: "Moroccan Harira Spices",
     description: "Un mélange d’épices équilibré pour enrichir la célèbre soupe marocaine avec chaleur et profondeur.",
-    price: 38,
-    oldPrice: 45,
+    price: 10,
+    oldPrice: 15,
     rating: 5,
-    image: '../../public/images/harira.jpg',
+    image: '/images/harira.jpg',
     popular: false,
+    pdf:'/harira.pdf',
   },
   {
     id: 3,
     name: "Moroccan Kefta Spices",
     description: "Un assaisonnement audacieux et parfumé, parfait pour vos boulettes ou grillades à la marocaine.",
-    price: 12,
-    oldPrice: 15,
+    price: 15,
+    oldPrice: 20,
     rating: 4,
-    image: '../../public/images/kefta.jpg',
+    image: '/images/kefta.jpg',
     popular: false,
+    pdf:'/kefta.pdf',
   },
   {
     id: 4,
     name: "Moroccan Shawarma Spices",
     description: "Une fusion d’épices orientales et marocaines pour un chawarma savoureux et irrésistible.",
     price: 15,
-    oldPrice: 18,
+    oldPrice: 30,
     rating: 4,
-    image: '../../public/images/shawarma.jpg',
+    image: '/images/shawarma.jpg',
     popular: false,
+    pdf:'/shawarma.pdf',
   },
   {
     id: 5,
     name: "Moroccan Fish Spices",
     description: "Un mélange subtil d’épices et d’herbes pour rehausser chaque plat de poisson avec une touche marocaine authentique.",
-    price: 14,
-    oldPrice: 16,
+    price: 10,
+    oldPrice: 15,
     rating: 5,
-    image: '../../public/images/fish.jpg',
+    image: '/images/fish.jpg',
     popular: false,
+    pdf:'/fish.pdf'
   },
   {
     id: 6,
     name: "Moroccan Harira Spices",
     description: "Un mélange d’épices équilibré pour enrichir la célèbre soupe marocaine avec chaleur et profondeur.",
-    price: 20,
-    oldPrice: 24,
+    price: 10,
+    oldPrice: 15,
     rating: 5,
-    image: '../../public/images/harira.jpg',
+    image: '/images/harira.jpg',
     popular: false,
+    pdf:'/harira.pdf',
   },
   {
     id: 7,
     name: "Moroccan Kefta Spices",
     description: "Un assaisonnement audacieux et parfumé, parfait pour vos boulettes ou grillades à la marocaine.",
-    price: 16,
-    oldPrice: 19,
+    price: 15,
+    oldPrice: 20,
     rating: 4,
-    image: '../../public/images/kefta.jpg',
+    image: '/images/kefta.jpg',
     popular: false,
+    pdf:'/kefta.pdf',
   },
   {
     id: 8,
     name: "Moroccan Shawarma Spices",
     description: "Une fusion d’épices orientales et marocaines pour un chawarma savoureux et irrésistible.",
-    price: 22,
-    oldPrice: 26,
+    price: 15,
+    oldPrice: 30,
     rating: 5,
-    image: '../../public/images/shawarma.jpg',
+    image: '/images/shawarma.jpg',
     popular: false,
+    pdf:'/shawarma.pdf',
   },
   {
     id: 9,
     name: "Moroccan Chicken Spices",
     description: "Des saveurs riches et chaudes pour transformer votre poulet rôti en un festin traditionnel.",
-    price: 28,
-    oldPrice: 32,
+    price: 15,
+    oldPrice: 25,
     rating: 5,
-    image: '../../public/images/chicken.jpg',
+    image: '/images/chicken.jpg',
     popular: false,
+    pdf:'/shawarma.pdf',
+  }
+]
+
+
+const Spices = [
+  {
+    id: 1,
+    name: "Moroccan Chicken Spices",
+    description: "Des saveurs riches et chaudes pour transformer votre poulet rôti en un festin traditionnel.",
+    price: 45,
+    oldPrice: 55,
+    rating: 5,
+    image: '/QuantiteG/chicken.jpg',
+    popular: false,
+    pdf:'/shawarma.pdf',
+  },
+  {
+    id: 2,
+    name: "Moroccan Harira Spices",
+    description: "Un mélange d’épices équilibré pour enrichir la célèbre soupe marocaine avec chaleur et profondeur.",
+    price: 40,
+    oldPrice: 45,
+    rating: 5,
+    image: '../../public/images/harira.jpg',
+    popular: false,
+    pdf:'/harira.pdf',
+  },
+  {
+    id: 3,
+    name: "Moroccan Kefta Spices",
+    description: "Un assaisonnement audacieux et parfumé, parfait pour vos boulettes ou grillades à la marocaine.",
+    price: 45,
+    oldPrice: 55,
+    rating: 4,
+    image: '/QuantiteG/kefta.jpg',
+    popular: false,
+    pdf:'/kefta.pdf',
+  },
+  {
+    id: 4,
+    name: "Moroccan Shawarma Spices",
+    description: "Une fusion d’épices orientales et marocaines pour un chawarma savoureux et irrésistible.",
+    price: 45,
+    oldPrice: 60,
+    rating: 4,
+    image: '/QuantiteG/shawarma.jpg',
+    popular: false,
+    pdf:'/shawarma.pdf',
+  },
+  {
+    id: 5,
+    name: "Moroccan Fish Spices",
+    description: "Un mélange subtil d’épices et d’herbes pour rehausser chaque plat de poisson avec une touche marocaine authentique.",
+    price: 40,
+    oldPrice: 45,
+    rating: 5,
+    image: '/QuantiteG/fish.jpg',
+    popular: false,
+    pdf:'/fish.pdf'
+  },
+  {
+    id: 6,
+    name: "Moroccan Harira Spices",
+    description: "Un mélange d’épices équilibré pour enrichir la célèbre soupe marocaine avec chaleur et profondeur.",
+    price: 40,
+    oldPrice: 55,
+    rating: 5,
+    image: '../../public/images/harira.jpg',
+    popular: false,
+    pdf:'/harira.pdf',
+  },
+  {
+    id: 7,
+    name: "Moroccan Kefta Spices",
+    description: "Un assaisonnement audacieux et parfumé, parfait pour vos boulettes ou grillades à la marocaine.",
+    price: 40,
+    oldPrice: 55,
+    rating: 4,
+    image: '/QuantiteG/kefta.jpg',
+    popular: false,
+    pdf:'/kefta.pdf',
+  },
+  {
+    id: 8,
+    name: "Moroccan Shawarma Spices",
+    description: "Une fusion d’épices orientales et marocaines pour un chawarma savoureux et irrésistible.",
+    price: 45,
+    oldPrice: 60,
+    rating: 5,
+    image: '/QuantiteG/shawarma.jpg',
+    popular: false,
+    pdf:'/shawarma.pdf',
+  },
+  {
+    id: 9,
+    name: "Moroccan Chicken Spices",
+    description: "Des saveurs riches et chaudes pour transformer votre poulet rôti en un festin traditionnel.",
+    price: 45,
+    oldPrice: 55,
+    rating: 5,
+    image: '/QuantiteG/chicken.jpg',
+    popular: false,
+    pdf:'/shawarma.pdf',
   }
 ]
 
@@ -126,6 +238,7 @@ const services = [
         <>
         {/* Main Content */}
         <main className="pt-24 pb-12 px-4 sm:px-6 lg:px-8 max-w-[1920px] mx-auto">
+        <h2 className="text-3xl font-bold text-center text-gray-900 mb-12">Quantites : 30g</h2>
         {/* Products Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {spices.map((spice) => (
@@ -153,19 +266,21 @@ const services = [
                 </div>
                 <div className="flex items-center justify-between mt-6">
                   <div className="flex items-center space-x-2">
-                    <span className="text-2xl font-bold">{spice.price}€</span>
+                    <span className="text-2xl font-bold">{spice.price}DH</span>
                     {spice.oldPrice && (
-                      <span className="text-gray-400 line-through">{spice.oldPrice}€</span>
+                      <span className="text-gray-400 line-through">{spice.oldPrice}dh</span>
                     )}
                   </div>
-                  <button className="bg-primary text-white px-6 py-2 rounded-full hover:bg-red-800 transition-colors transform hover:scale-105 bg-black">
+                  <a href={spice.pdf} target="_blank">
+                  <button className="bg-red-700 text-white px-4 py-2 rounded-full text-sm font-medium hover:bg-red-800 transition-colors">
                     Guide
                   </button>
+                  </a>
                   <button onClick={() => {
                     const message = encodeURIComponent(`Bonjour, je suis intéressé par : ${spice.name} (${spice.price}€)`);
                     const whatsappLink = `https://wa.me/${phoneNumber}?text=${message}`;
                     window.open(whatsappLink, '_blank');
-                     }} className="bg-primary text-white px-6 py-2 rounded-full hover:bg-red-800 transition-colors transform hover:scale-105 bg-black">
+                     }} className="bg-red-700 text-white px-4 py-2 rounded-full text-sm font-medium hover:bg-red-800 transition-colors">
                       Acheter
                       </button>
                 </div>
@@ -173,6 +288,61 @@ const services = [
             </div>
           ))}
         </div>
+
+
+
+        <h2 className="text-3xl font-bold text-center text-gray-900 mb-12">Quantites : 150g</h2>
+        {/* Products Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {Spices.map((spice) => (
+            <div key={spice.id} className="bg-white rounded-lg shadow-md overflow-hidden transform transition-all duration-300 hover:scale-105 hover:shadow-xl">
+              <div className="relative">
+                <img src={spice.image} alt={spice.name} className="w-full h-64 object-cover" />
+                {spice.popular && (
+                  <div className="absolute top-4 right-4 bg-primary text-white px-3 py-1 rounded-full text-sm">
+                    Populaire
+                  </div>
+                )}
+              </div>
+              <div className="p-6">
+                <h3 className="text-xl font-semibold">{spice.name}</h3>
+                <p className="text-gray-600 mt-2">{spice.description}</p>
+                <div className="flex items-center mt-4">
+                  {[...Array(5)].map((_, i) => (
+                    <StarIcon
+                      key={i}
+                      className={`h-5 w-5 ${
+                        i < spice.rating ? 'text-yellow-400' : 'text-gray-300'
+                      }`}
+                    />
+                  ))}
+                </div>
+                <div className="flex items-center justify-between mt-6">
+                  <div className="flex items-center space-x-2">
+                    <span className="text-2xl font-bold">{spice.price}DH</span>
+                    {spice.oldPrice && (
+                      <span className="text-gray-400 line-through">{spice.oldPrice}dh</span>
+                    )}
+                  </div>
+                  <a href={spice.pdf} target="_blank">
+                  <button className="bg-red-700 text-white px-4 py-2 rounded-full text-sm font-medium hover:bg-red-800 transition-colors">
+                    Guide
+                  </button>
+                  </a>
+                  <button onClick={() => {
+                    const message = encodeURIComponent(`Bonjour, je suis intéressé par : ${spice.name} (${spice.price}€)`);
+                    const whatsappLink = `https://wa.me/${phoneNumber}?text=${message}`;
+                    window.open(whatsappLink, '_blank');
+                     }} className="bg-red-700 text-white px-4 py-2 rounded-full text-sm font-medium hover:bg-red-800 transition-colors">
+                      Acheter
+                      </button>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+
+
 
         {/* Services Section */}
         <section className="mt-24">

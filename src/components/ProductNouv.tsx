@@ -6,27 +6,30 @@ import { Star } from 'lucide-react';
 const products = [
   {
     id: 1,
-    name: 'Moroccan Fish Spices',
-    description: 'Un mélange subtil d’épices et d’herbes pour rehausser chaque plat de poisson avec une touche marocaine authentique.',
-    rating: 4,
-    price: 18,
-    image: '../../public/images/fish.jpg',
+    name: 'Moroccan Shawarma Spices',
+    description: 'Une fusion d’épices orientales et marocaines pour un chawarma savoureux et irrésistible.',
+    rating: 5,
+    price: 45,
+    image: '/QuantiteG/shawarma.jpg',
+    pdf:'/shawarma.pdf',
   },
   {
     id: 2,
     name: 'Moroccan Harira Spices',
     description: 'Un mélange d’épices équilibré pour enrichir la célèbre soupe marocaine avec chaleur et profondeur.',
-    rating: 5,
-    price: 15,
-    image: '../../public/images/harira.jpg',
+    rating: 4,
+    price: 40,
+    image: '/QuantiteG/harira.jpg',
+    pdf:'/harira.pdf',
   },
   {
     id: 3,
     name: 'Moroccan Kefta Spices',
     description: 'Un assaisonnement audacieux et parfumé, parfait pour vos boulettes ou grillades à la marocaine.',
     rating: 5,
-    price: 22,
-    image: '../../public/images/kefta.jpg',
+    price: 40,
+    image: '/QuantiteG/kefta.jpg',
+    pdf:'/kefta.pdf',
   },
 ];
 
@@ -43,7 +46,7 @@ const handleClick = () => {
   return (
     <section className="py-16 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-3xl font-bold text-center text-gray-900 mb-12">Nouveautés</h2>
+        <h2 className="text-3xl font-bold text-center text-gray-900 mb-12">Nouveautés 150g</h2>
         
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {products.map((product) => (
@@ -75,10 +78,12 @@ const handleClick = () => {
                 </div>
                 
                 <div className="mt-4 flex items-center justify-between">
-                  <span className="text-2xl font-bold text-gray-900">{product.price}€</span>
+                  <span className="text-2xl font-bold text-gray-900">{product.price}DH</span>
+                  <a href={product.pdf} target="_blank">
                   <button className="bg-red-700 text-white px-4 py-2 rounded-full text-sm font-medium hover:bg-red-800 transition-colors">
                     Guide
                   </button>
+                  </a>
                   <button onClick={() => {
                     const message = encodeURIComponent(`Bonjour, je suis intéressé par : ${product.name} (${product.price}€)`);
                     const whatsappLink = `https://wa.me/${phoneNumber}?text=${message}`;

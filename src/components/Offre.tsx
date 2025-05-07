@@ -119,9 +119,11 @@ export default function Offre() {
               Chaque mois, nos experts parcourent les marchés traditionnels pour vous proposer les meilleures épices, 
               accompagnées de recettes exclusives et de conseils d'utilisation.
             </p>
-            <button className="bg-red-600 text-white py-3 px-6 rounded-full hover:bg-red-700 transition-colors duration-200">
+            <a href="">
+              <button className="bg-red-600 text-white py-3 px-6 rounded-full hover:bg-red-700 transition-colors duration-200">
               En savoir plus
             </button>
+            </a>
           </div>
           <div className="relative h-[400px]">
             <img 
