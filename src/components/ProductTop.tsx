@@ -82,11 +82,6 @@ const BestSellers = () => {
                     <span className="text-gray-500 line-through text-sm">{product.originalPrice}dh</span>
                     <span className="ml-2 text-2xl font-bold text-gray-900">{product.currentPrice}DH</span>
                   </div>
-                  <a href={product.pdf} target="_blank">
-                  <button className="bg-red-700 text-white px-4 py-2 rounded-full text-sm font-medium hover:bg-red-800 transition-colors">
-                    Guide
-                  </button>
-                  </a>
                   <button onClick={() => {
                     const message = encodeURIComponent(`Bonjour, je suis intéressé par : ${product.name} (${product.currentPrice}€)`);
                     const whatsappLink = `https://wa.me/${phoneNumber}?text=${message}`;
